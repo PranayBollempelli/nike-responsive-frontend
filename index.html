@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-fam {
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      /* Hide scrollbar for Chrome, Safari, and Opera */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge, and Firefox */
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="bg-white h-screen w-full">
+        <!-- Top Navbar only for above for large screens   -->
+        <nav class="hidden bg-gray-100 lg:flex justify-between px-12 py-2">
+          <img
+            src="./images/logo/logo_JORDAN.png"
+            alt="Jordan Logo"
+            class="h-5"
+          />
+          <div class="w-auto flex items-center">
+            <a
+              class="border-r-2 border-black font-bold text-xs px-3 text-black hover:text-opacity-50"
+              href=""
+              >Find a Store</a
+            >
+            <a
+              class="border-r-2 border-black font-bold text-xs px-3 text-black hover:text-opacity-50"
+              href=""
+              >Help</a
+            >
+            <a
+              class="border-r-2 border-black font-bold text-xs px-3 text-black hover:text-opacity-50"
+              href=""
+              >Join Us</a
+            >
+            <a
+              class="font-bold text-xs px-3 text-black hover:text-opacity-50"
+              href=""
+              >Sign In</a
+            >
+          </div>
+        </nav>
+
+        <!-- Main navbar -->
+        <nav
+          class="bg-white flex justify-between items-center py-4 px-4 md:px-12 w-full"
+        >
+          <img class="h-6" src="./images/logo/Logo_NIKE.svg.png" alt="" />
+          <div class="hidden lg:flex items-center space-x-10 md:space-x-6">
+            <a
+              href=""
+              class="text-black font-semibold hover:underline hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px]"
+              >Extra 35% off</a
+            >
+            <a
+              href=""
+              class="text-black font-semibold hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px]"
+              >New & Featured </a
+            ><a
+              href=""
+              class="text-black font-semibold hover:underline hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px]"
+              >Men</a
+            ><a
+              href=""
+              class="text-black font-semibold hover:underline hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px]"
+              >Women</a
+            ><a
+              href=""
+              class="text-black font-semibold hover:underline hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px]"
+              >Kids</a
+            ><a
+              href=""
+              class="text-black font-semibold hover:underline hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px]"
+              >Sale</a
+            >
+            <a
+              href=""
+              class="text-black font-semibold hover:underline hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px] hidden xl:flex"
+              >Customise</a
+            >
+            <a
+              href=""
+              class="text-black font-semibold hover:underline hover:underline hover:[text-underline-offset:4px] hover:[text-decoration-thickness:2px] hidden xl:flex"
+              >SNKRS</a
+            >
+          </div>
+          <div class="flex space-x-4">
+            <img src="./images/icons/search.svg" alt="" class="h-6" />
+            <img
+              src="./images//icons/like.svg"
+              alt=""
+              class="h-6 hidden lg:flex"
+            />
+            <img src="./images//icons/cart.svg" alt="" class="h-6" />
+            <img
+              src="./images//icons/profile.svg"
+              alt=""
+              class="h-6 block lg:hidden"
+            />
+            <img
+              src="./images//icons/hamburger-menu.svg"
+              alt=""
+              class="h-6 block lg:hidden"
+            />
+          </div>
+        </nav>
+
+        <!-- Main video Section -->
+        <div class="h-auto bg-white px-4 md:px-12">
+          <video autoplay loop class="w-full hidden md:block">
+            <source
+              src="./videos/Winning is winning Nike IN lg.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <video autoplay loop class="w-full block md:hidden">
+            <source
+              src="./videos/Winning is winning Nike IN md.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+
+        <!-- Motivation Description -->
+        <div class="sm:text-center p-4 md:px-12">
+          <h1
+            class="text-4xl sm:text-6xl md:text-10xl font-bold tracking-tighter pt-10 font-fam"
+          >
+            WINNING IS WINNING
+          </h1>
+          <p class="font-semibold text-md sm:text-md">
+            Winning isn't just about showing up—it's about pushing limits and
+            accomplishing what others might deem impossible.
+          </p>
+          <button
+            class="bg-black h-8 text-white w-24 rounded-2xl mt-6 mb-10 border-0"
+          >
+            Explore
+          </button>
+        </div>
+
+        <!-- Offer poster -->
+        <div class="mb-4 px-4 md:px-12 sm:px-8">
+          <img
+            src="./images/offer/offer-lg.png"
+            alt="offers"
+            class="hidden md:block"
+          />
+          <img
+            src="./images/offer/offer-md.png"
+            alt="offers"
+            class="hidden sm:block md:hidden w-90 mx-auto"
+          />
+          <img
+            src="./images/offer/offer-sm.png"
+            alt="offers"
+            class="block sm:hidden w-full"
+          />
+        </div>
+
+        <!-- Second description -->
+        <div class="sm:text-center p-4 md:px-12">
+          <p class="font-semibold text-md sm:text-md">
+            Discover exclusive deals, with an extra 35% off sale items. Use code
+            FRESH from now till 01 Sep.
+          </p>
+          <button
+            class="bg-black h-8 text-white w-24 rounded-2xl mt-6 mb-6 border-0"
+          >
+            Shop
+          </button>
+        </div>
+
+        <!-- Feature Section -->
+        <h1 class="text-start text-2xl font-semibold mb-5 px-4 md:px-12">
+          Featured
+        </h1>
+        <div class="px-4 md:px-12 mb-10 overflow-x-auto">
+          <div class="flex space-x-4">
+            <!-- First -->
+            <div class="min-w-[300px] md:min-w-[400px]">
+              <img
+                class="w-full h-5/6 mb-4"
+                src="./images/offer/image-1.jpg"
+                alt=""
+              />
+              <p class="mb-2 text-xl">For leading with style</p>
+              <p class="pd-2 underline underline-offset-8 font-semibold">
+                Explore
+              </p>
+            </div>
+            <!-- Second -->
+            <div class="min-w-[300px] md:min-w-[400px]">
+              <img
+                class="w-full h-5/6 mb-4"
+                src="./images/offer/image-2.png"
+                alt=""
+              />
+              <p class="mb-2 text-xl">Explore the outdoors</p>
+              <p class="underline underline-offset-8 font-semibold">Shop</p>
+            </div>
+            <!-- Third -->
+            <div class="min-w-[300px] md:min-w-[400px]">
+              <img
+                class="w-full h-5/6 mb-4"
+                src="./images/offer/image-3.png"
+                alt=""
+              />
+              <p class="mb-2 text-xl">killshot 2</p>
+              <p class="font-semibold underline underline-offset-8">shop</p>
+            </div>
+          </div>
+        </div>
+
+        <!--First Shoes section -->
+        <div class="mb-9 px-4 md:px-12">
+          <h1 class="text-start text-2xl font-semibold scrollbar-hide">
+            Treading This Week
+          </h1>
+          <div
+            class="py-4 mb-10 flex overflow-x-auto space-x-4 scrollbar-hide cursor-pointer"
+          >
+            <div class="min-w-[300px] md:min-w-[450px]">
+              <img
+                src="./images/product images/1.png"
+                alt=""
+                class="h-5/6 w-full mb-2"
+              />
+              <p class="font-semibold">Giannis Freak 6 Ep</p>
+              <p class="text-gray mb-2">Basketball Shoes</p>
+              <p class="font-semibold">MRP : ₹ 11 895.00</p>
+            </div>
+
+            <div class="min-w-[300px] md:min-w-[450px]">
+              <img
+                src="./images/product images/2.png"
+                alt=""
+                class="h-5/6 w-full mb-2"
+              />
+              <p class="font-semibold">Giannis Freak 6 (Team Bank)Ep</p>
+              <p class="text-gray mb-2">Basketball Shoes</p>
+              <p class="font-semibold">MRP : ₹ 11 895.00</p>
+            </div>
+
+            <div class="min-w-[300px] md:min-w-[450px]">
+              <img
+                src="./images/product images/3.png"
+                alt=""
+                class="h-5/6 w-full mb-2"
+              />
+              <p class="font-semibold">Giannis Freak 6 Ep</p>
+              <p class="text-gray mb-2">Basketball Shoes</p>
+              <p class="font-semibold">MRP : ₹ 11 895.00</p>
+            </div>
+
+            <div class="min-w-[300px] md:min-w-[450px]">
+              <img
+                src="./images/product images/4.png"
+                alt=""
+                class="h-5/6 w-full mb-2"
+              />
+              <p class="font-semibold">Sabrina 2 Ep</p>
+              <p class="text-gray mb-2">Basketball Shoes</p>
+              <p class="font-semibold">MRP : ₹ 11 895.00</p>
+            </div>
+
+            <div class="min-w-[300px] md:min-w-[450px]">
+              <img
+                src="./images/product images/5.png"
+                alt=""
+                class="h-5/6 w-full mb-2"
+              />
+              <p class="font-semibold">Luka # PF Team Bank</p>
+              <p class="text-gray mb-2">Basketball Shoes</p>
+              <p class="font-semibold">MRP : ₹ 11 895.00</p>
+            </div>
+
+            <div class="min-w-[300px] md:min-w-[450px]">
+              <img
+                src="./images/product images/6.png"
+                alt=""
+                class="h-5/6 w-full mb-2"
+              />
+              <p class="font-semibold">Tatum 2 PF 'Lemonade'</p>
+              <p class="text-gray mb-2">Basketball Shoes</p>
+              <p class="font-semibold">MRP : ₹ 11 495.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Shoes section -->
+        <div class="px-4 md:px-12">
+          <h1 class="text-start text-2xl font-semibold mb-5">
+            Treading This Week
+          </h1>
+          <div class="flex overflow-x-auto space-x-4 scrollbar-hide">
+            <div class="min-w-[300px] relative">
+              <img
+                src="./images/product images/2.1.jpg"
+                alt=""
+                class="h-auto w-full"
+              />
+              <p
+                class="absolute top-0 right-0 m-8 text-white font-semibold z-10 bg-black bg-opacity-50 px-4 py-1 rounded-2xl"
+              >
+                1/7
+              </p>
+            </div>
+            <div class="min-w-[300px] relative">
+              <img
+                src="./images/product images/2.2.png"
+                alt=""
+                class="h-auto w-full"
+              />
+              <p
+                class="absolute top-0 right-0 m-8 text-white font-semibold z-10 bg-black bg-opacity-50 px-4 py-1 rounded-2xl"
+              >
+                2/7
+              </p>
+            </div>
+            <div class="min-w-[300px] relative">
+              <img
+                src="./images/product images/2.3.png"
+                alt=""
+                class="h-auto w-full"
+              />
+              <p
+                class="absolute top-0 right-0 m-8 text-white font-semibold z-10 bg-black bg-opacity-50 px-4 py-1 rounded-2xl"
+              >
+                3/7
+              </p>
+            </div>
+            <div class="min-w-[300px] relative">
+              <img
+                src="./images/product images/2.4.png"
+                alt=""
+                class="h-auto w-full"
+              />
+              <p
+                class="absolute top-0 right-0 m-8 text-white font-semibold z-10 bg-black bg-opacity-50 px-4 py-1 rounded-2xl"
+              >
+                4/7
+              </p>
+            </div>
+            <div class="min-w-[300px] relative">
+              <img
+                src="./images/product images/2.5.png"
+                alt=""
+                class="h-auto w-full"
+              />
+              <p
+                class="absolute top-0 right-0 m-8 text-white font-semibold z-10 bg-black bg-opacity-50 px-4 py-1 rounded-2xl"
+              >
+                5/7
+              </p>
+            </div>
+            <div class="min-w-[300px] relative">
+              <img
+                src="./images/product images/2.6.png"
+                alt=""
+                class="h-auto w-full"
+              />
+              <p
+                class="absolute top-0 right-0 m-8 text-white font-semibold z-10 bg-black bg-opacity-50 px-4 py-1 rounded-2xl"
+              >
+                6/7
+              </p>
+            </div>
+            <div class="min-w-[300px] relative">
+              <img
+                src="./images/product images/2.7.png"
+                alt=""
+                class="h-auto w-full"
+              />
+              <p
+                class="absolute top-0 right-0 m-8 text-white font-semibold z-10 bg-black bg-opacity-50 px-4 py-1 rounded-2xl"
+              >
+                7/7
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop By Sports section -->
+        <div class="my-8 px-4 md:px-12 mb-20">
+          <h1 class="text-2xl font-semibold mb-4">Shop By Sports</h1>
+          <div class="flex overflow-x-auto space-x-4 scrollbar-hide">
+            <div class="relative min-w-[300px] md:min-w-[600px]">
+              <img
+                class="w-auto h-5/6 block md:hidden"
+                src="./images/sports/running-md.jpg"
+                alt=""
+              />
+              <img
+                src="./images/sports/running.jpg"
+                alt=""
+                class="hidden md:block"
+              />
+              <p
+                class="absolute bottom-[70px] md:bottom-[30px] left-4 md:left-8 bg-white rounded-3xl px-4 py-2 font-semibold md:text-2xl"
+              >
+                Running
+              </p>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[600px]">
+              <img
+                class="w-auto h-5/6 block md:hidden"
+                src="./images/sports/football-md.jpg"
+                alt=""
+              />
+              <img
+                src="./images/sports/football.jpg"
+                alt=""
+                class="hidden md:block"
+              />
+              <p
+                class="absolute bottom-[70px] md:bottom-[30px] left-4 md:left-8 bg-white rounded-3xl px-4 py-2 font-semibold md:text-2xl"
+              >
+                Football
+              </p>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[600px]">
+              <img
+                class="w-auto h-5/6 block md:hidden"
+                src="./images/sports/basketball.jpg"
+                alt=""
+              />
+              <img
+                src="./images/sports/basketball.jpg"
+                alt=""
+                class="hidden md:block"
+              />
+              <p
+                class="absolute bottom-[70px] md:bottom-[30px] left-4 md:left-8 bg-white rounded-3xl px-4 py-2 font-semibold md:text-2xl"
+              >
+                Basktball
+              </p>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[600px]">
+              <img
+                class="w-auto h-5/6 block md:hidden"
+                src="./images/sports/tennis-md.jpg"
+                alt=""
+              />
+              <img
+                src="./images/sports/tennis.jpg"
+                alt=""
+                class="hidden md:block"
+              />
+              <p
+                class="absolute bottom-[70px] md:bottom-[30px] left-4 md:left-8 bg-white rounded-3xl px-4 py-2 font-semibold md:text-2xl"
+              >
+                Tennis
+              </p>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[600px]">
+              <img
+                class="w-auto h-5/6 block md:hidden"
+                src="./images/sports/skating-md.jpg"
+                alt=""
+              />
+              <img
+                src="./images/sports/skating.jpg"
+                alt=""
+                class="hidden md:block"
+              />
+              <p
+                class="absolute bottom-[70px] md:bottom-[30px] left-4 md:left-8 bg-white rounded-3xl px-4 py-2 font-semibold md:text-2xl"
+              >
+                Skateboarding
+              </p>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[600px]">
+              <img
+                class="w-auto h-5/6 block md:hidden"
+                src="./images/sports/dance-md.jpg"
+                alt=""
+              />
+              <img
+                src="./images/sports/dance.jpg"
+                alt=""
+                class="hidden md:block"
+              />
+              <p
+                class="absolute bottom-[70px] md:bottom-[30px] left-4 md:left-8 bg-white rounded-3xl px-4 py-2 font-semibold md:text-2xl"
+              >
+                Dance
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Don't miss section -->
+        <div class="px-4 md:px-12">
+          <h1 class="text-2xl font-semibold mb-4">Don't miss</h1>
+          <video autoplay loop class="w-full hidden md:block">
+            <source src="./videos/dont miss lg.mp4" type="video/mp4" />
+          </video>
+          <video autoplay loop class="w-full block md:hidden">
+            <source src="./videos/dont miss md.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="sm:text-center p-4 md:px-12">
+          <p class="font-semibold text-lg">Jordan Apparel</p>
+          <h1
+            class="text-4xl sm:text-6xl md:text-10xl font-bold tracking-tighter font-fam"
+          >
+            EARTH TONES
+          </h1>
+          <p class="font-semibold text-md sm:text-md">
+            Ground your look in earthy tones inspired by outdoor courts. Details
+            like knits, ripcords, and cargo pockets add rich texture to your
+            fit.
+          </p>
+          <button
+            class="bg-black h-8 text-white w-24 rounded-2xl mt-6 mb-10 border-0"
+          >
+            Shop
+          </button>
+        </div>
+
+        <!-- Member benefits -->
+        <div class="my-8 px-4 md:px-12 mb-20">
+          <h1 class="text-2xl font-semibold mb-4">Member benifits</h1>
+          <div class="flex overflow-x-auto space-x-4 scrollbar-hide">
+            <div class="relative min-w-[300px] md:min-w-[400px]">
+              <img class="w-auto h-[100%]" src="./images/sports/1.jpg" alt="" />
+              <div
+                class="absolute bottom-[50px] md:bottom-[100px] px-6 text-white"
+              >
+                <p class="text-xl font-bold">Member Product</p>
+                <h1 class="text-2xl font-semibold my-2">
+                  Your Exclusive Access
+                </h1>
+                <button
+                  class="bg-white px-4 py-1 text-black mt-2 font-semibold rounded-2xl"
+                >
+                  Shop
+                </button>
+              </div>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[400px]">
+              <img class="w-auto h-[100%]" src="./images/sports/2.jpg" alt="" />
+              <div
+                class="absolute bottom-[50px] md:bottom-[100px] px-6 text-white"
+              >
+                <p class="text-xl font-bold">Nike By You</p>
+                <h1 class="text-2xl font-semibold my-2">
+                  Your Customisation Service
+                </h1>
+                <button
+                  class="bg-white px-4 py-1 text-black mt-2 font-semibold rounded-2xl"
+                >
+                  Customise
+                </button>
+              </div>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[400px]">
+              <img class="w-auto h-[100%]" src="./images/sports/3.jpg" alt="" />
+              <div
+                class="absolute bottom-[50px] md:bottom-[100px] px-6 text-white"
+              >
+                <p class="text-xl font-bold">Member Rewards</p>
+                <h1 class="text-2xl font-semibold my-2">
+                  How We Say Thank You
+                </h1>
+                <button
+                  class="bg-white px-4 py-1 text-black mt-2 font-semibold rounded-2xl"
+                >
+                  Celebrate
+                </button>
+              </div>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[400px]">
+              <img class="w-auto h-[100%]" src="./images/sports/4.jpg" alt="" />
+              <div
+                class="absolute bottom-[50px] md:bottom-[100px] px-6 text-white"
+              >
+                <p class="text-xl font-bold">Sport & Wellness Apps</p>
+                <h1 class="text-2xl font-semibold my-2">
+                  Movement Where You Are
+                </h1>
+                <button
+                  class="bg-white px-4 py-1 text-black mt-2 font-semibold rounded-2xl"
+                >
+                  Move
+                </button>
+              </div>
+            </div>
+
+            <div class="relative min-w-[300px] md:min-w-[400px]">
+              <img class="w-auto h-[100%]" src="./images/sports/5.jpg" alt="" />
+              <div
+                class="absolute bottom-[50px] md:bottom-[100px] px-6 text-white"
+              >
+                <p class="text-xl font-bold">SNKRS</p>
+                <h1 class="text-2xl font-semibold my-2">
+                  Your Ultimate Sneaker Community
+                </h1>
+                <button
+                  class="bg-white px-4 py-1 text-black mt-2 font-semibold rounded-2xl"
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="block md:flex lg:space-x-60 px-4 md:px-12 mt-10 pb-12">
+          <ul class="w-2/5">
+            <li class="mt-6 mb-2 md:my-6 font-semibold">Resources</li>
+            <li class="text-slate-500 font-semibold my-2">Find A Store</li>
+            <li class="text-slate-500 font-semibold my-2">Become A Member</li>
+            <li class="text-slate-500 font-semibold my-2">Send Us Feedback</li>
+          </ul>
+          <ul class="w-2/5">
+            <li class="mt-6 mb-2 md:my-6 font-semibold">Help</li>
+            <li class="text-slate-500 font-semibold my-2">Get Help</li>
+            <li class="text-slate-500 font-semibold my-2">Order Status</li>
+            <li class="text-slate-500 font-semibold my-2">Delivery</li>
+            <li class="text-slate-500 font-semibold my-2">Returns</li>
+            <li class="text-slate-500 font-semibold my-2">Payment Options</li>
+            <li class="text-slate-500 font-semibold my-2">
+              Contact Us On Nile.com Inquiries
+            </li>
+            <li class="text-slate-500 font-semibold">
+              Contact Us On All Other Inquiries
+            </li>
+          </ul>
+          <ul class="w-2/5">
+            <li class="mt-6 mb-2 md:my-6 font-semibold">Company</li>
+            <li class="text-slate-500 font-semibold my-2">About Nike</li>
+            <li class="text-slate-500 font-semibold my-2">News</li>
+            <li class="text-slate-500 font-semibold my-2">Careers</li>
+            <li class="text-slate-500 font-semibold my-2">Investors</li>
+            <li class="text-slate-500 font-semibold my-2">Sustainability</li>
+          </ul>
+          <ul class="w-2/5">
+            <li class="flex items-center mt-6 mb-2 md:my-6">
+              <img src="./images/icons/world.svg" alt="" class="h-4" />
+              <p class="text-slate-500 font-semibold pl-2">India</p>
+            </li>
+          </ul>
+        </footer>
+        <footer class="pb-24 px-4 md:px-12 md:flex md:space-x-8 mb-4">
+          <p class="text-gray-500 text-sm sm:text-base">
+            © Copyright 2021. All rights reserved.
+          </p>
+          <p class="text-gray-500 text-sm sm:text-base">Terms of Sale</p>
+          <p class="text-gray-500 text-sm sm:text-base">Terms of Use</p>
+          <p class="text-gray-500 text-sm sm:text-base">Nike Privacy Policy</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
